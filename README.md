@@ -17,3 +17,9 @@ Delete
 ```sh
 netsh interface portproxy delete v4tov4 listenport=3000 listenaddress=0.0.0.0
 ```
+
+List
+
+```sh
+netsh interface portproxy show v4tov4
+```
