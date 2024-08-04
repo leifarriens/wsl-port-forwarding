@@ -1,10 +1,30 @@
-# wsl-port-forwarding
+# wsl
 
-## Create firewall rules
+## wsl-backup
+
+### Create backup
+
+```ps
+wsl --export Ubuntu "C:\wsl_bk\ubuntu.tar"
+```
+
+### Restore form backup
+
+```ps
+wsl --unregister <distribution>
+```
+
+```ps
+wsl --import Ubuntu "C:\wsl_bk\ubuntu.tar"
+```
+
+## wsl-port-forwarding
+
+### Create firewall rules
 
 [Link](https://www.nextofwindows.com/allow-server-running-inside-wsl-to-be-accessible-outside-windows-10-host)
 
-## hyper-v port forwarding
+### hyper-v port forwarding
 
 Create
 
