@@ -32,7 +32,13 @@ or via Gui: [Link](https://www.nextofwindows.com/allow-server-running-inside-wsl
 Create
 
 ```sh
-netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddress=172.30.208.115
+netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddress=<wsl_ip>
+```
+
+Get the wsl ip:
+
+```powershell
+wsl hostname -I
 ```
 
 Delete 
