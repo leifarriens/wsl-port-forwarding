@@ -22,7 +22,10 @@ wsl --import Ubuntu "C:\wsl_bk\ubuntu.tar"
 
 ### Create firewall rules
 
-[Link](https://www.nextofwindows.com/allow-server-running-inside-wsl-to-be-accessible-outside-windows-10-host)
+```powershell
+New-NetFirewallRule -DisplayName "Allow Port 3000" -Direction Inbound -Protocol TCP -LocalPort 3000 -Action Allow
+```
+or via Gui: [Link](https://www.nextofwindows.com/allow-server-running-inside-wsl-to-be-accessible-outside-windows-10-host)
 
 ### hyper-v port forwarding
 
